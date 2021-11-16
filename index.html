@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>MyBookList App</title>
+</head>
+<body>
+
+
+    <div class="container mt-4">
+
+
+        <h1 class="display-4 text-center header">
+            <i class="fas fa-book-open text-primary"></i>
+            My<span class="text-primary">Book</span>List
+        </h1>
+
+        <div class="text-center  alert text-light"    >
+
+        </div>
+
+
+
+
+        <!-- Form  start-->
+
+        <form  id="book-form">
+            <div class="form-group my-2">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id='title'>
+            </div>
+
+            <div class="form-group my-2">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id='author'>
+            </div>
+
+            <div class="form-group my-2">
+                <label for="isbn">ISBN#</label>
+                <input type="text" class="form-control" id='isbn'>
+            </div>
+
+            <input type="submit" class="btn btn-primary   my-2 w-100 " value='Add Book'>
+        </form>
+
+        <!-- Form  end-->
+
+
+
+
+
+        <!-- Table start-->
+
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+
+                </tbody>
+
+            </table>
+        <!-- Table end-->
+
+
+
+
+
+
+
+    </div>
+
+    <script src='./app.js'></script>
+</body>
+</html>
